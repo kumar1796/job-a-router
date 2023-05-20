@@ -4,23 +4,21 @@ import About from "./pages/About";
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <header>
-          <nav>
-            <h1>Job A Router</h1>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="about">About</NavLink>
-          </nav>
-        </header>
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="about" element={<About />} />
-          </Routes>
-        </main>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <header>
+        <nav>
+          <h1>Job A Router</h1>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="about">About</NavLink>
+        </nav>
+      </header>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
   );
 }
 
